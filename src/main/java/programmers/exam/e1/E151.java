@@ -12,7 +12,7 @@ public class E151 {
             hashMap.put(ch,hashMap.getOrDefault(ch,0)+1);
         }
         return hashMap.entrySet().stream()
-                .sorted(Entry.<Character, Integer>comparingByValue(Comparator.reverseOrder())
+                .sorted(Entry.<Character, Integer>comparingByValue().reversed()
                         .thenComparing(Entry.comparingByKey()))
                 .limit(1)
                 .map(entry -> Character.toString(entry.getKey()))

@@ -19,7 +19,7 @@ public class E31 {
         }
 
         return hashMap.entrySet().stream()
-                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .sorted(Entry.comparingByValue(Comparator.reverseOrder()))
                 .map(Entry::getKey)
                 .map(String::valueOf)
                 .collect(Collectors.joining(" "));

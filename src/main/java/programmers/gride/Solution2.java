@@ -1,4 +1,4 @@
-package level02.gride;
+package programmers.gride;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -23,6 +23,7 @@ public class E133 {
                 }
             }
         }
+        System.out.println(st);
         if (st.isEmpty()) {
             return 1;
         }
@@ -31,6 +32,7 @@ public class E133 {
 
     public static void main(String[] args) {
         E133 e133 = new E133();
-        e133.solution("AABCCBAADDA");
+        int solution = e133.solution("AABBAAABB");
+        System.out.println(solution);
     }
 }
