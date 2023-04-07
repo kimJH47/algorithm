@@ -12,11 +12,9 @@ public class E42 {
                 .sorted(Comparator.reverseOrder())
                 .collect(Collectors.toList());
         int count = 0;
-        int result = 0;
         int a = 0;
         int b = 0;
         while (count < K - 1) {
-
             count++;
             b++;
             if (a == b) {
@@ -27,8 +25,6 @@ public class E42 {
                 a++;
                 b = 0;
             }
-            result = list.get(a) * 10 + list.get(b);
-
 
         }
         return list.get(a) * 10 + list.get(b);

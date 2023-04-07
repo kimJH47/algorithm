@@ -5,15 +5,12 @@ import java.util.Arrays;
 public class E12 {
     public int solution(int[] arr) {
 
-        int sum = Arrays.stream(arr)
+        return (int) Arrays.stream(arr)
                 .sorted()
                 .skip(1)
                 .limit(arr.length - 2)
-                .sum();
-
-        System.out.println(sum);
-
-        return sum;
+                .average()
+                .getAsDouble();
     }
 
     public static void main(String[] args) {
